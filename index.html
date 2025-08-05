@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammed Luthufulla C | Digital Marketer & Islamic Scholar</title>
+  <style>
+    :root {
+      --primary: #0e6b56;
+      --secondary: #d3f4dc;
+      --light: #f5f9f6;
+      --dark: #222;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--light);
+      color: var(--dark);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background: var(--primary);
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    p {
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 1rem 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .social a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .social .instagram {
+      background: #e1306c;
+    }
+
+    .social .facebook {
+      background: #3b5998;
+    }
+
+    .contact a {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #e6f4ec;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#social">Social</a>
+  </nav>
+
+  <!-- Home -->
+  <header id="home">
+    <h1>Muhammed Luthufulla C</h1>
+    <p>Digital Marketing Expert & Islamic Scholar</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I’m Muhammed Luthufulla C — a passionate digital marketing expert with a strong presence both online and offline. I specialize in branding, strategy, and digital advertising tailored to help businesses grow in a competitive world.
+      </p>
+      <p>
+        In addition to my professional work, I am also an Islamic scholar dedicated to spreading knowledge, ethics, and spirituality. My life merges modern marketing expertise with traditional values.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="fade-in">
+    <div class="card">
+      <h2>Services</h2>
+      <ul>
+        <li>📱 Social Media Marketing (Instagram, Facebook, WhatsApp)</li>
+        <li>🌐 Website & SEO Strategy</li>
+        <li>📢 Offline Advertising & Campaigns</li>
+        <li>🕌 Islamic Teaching, Lectures & Guidance</li>
+        <li>📊 Personal Branding & Digital Consultancy</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <div class="card">
+      <h2>Contact</h2>
+      <div class="contact">
+        <a href="tel:+918129650313">📞 +91 81296 50313</a>
+        <a href="mailto:ahmdluthu710@gmail.com">✉️ ahmdluthu710@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media -->
+  <section id="social" class="fade-in">
+    <div class="card">
+      <h2>Social Media</h2>
+      <div class="social">
+        <a class="instagram" href="https://www.instagram.com/digi_mlc?igsh=Y2ZvZHhqcnpzem9l" target="_blank">Instagram</a>
+        <a class="facebook" href="https://www.facebook.com/share/1Bi3zPSHue/" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Muhammed Luthufulla C. Built with values, purpose & passion.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const sections = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
